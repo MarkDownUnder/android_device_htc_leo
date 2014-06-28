@@ -56,11 +56,6 @@ PRODUCT_COPY_FILES += \
 # media config xml file
 PRODUCT_COPY_FILES += \
 	device/htc/leo/configs/media_profiles.xml:system/etc/media_profiles.xml
-
-# Fix graphic crash
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    debug.sf.hw=0
-
 # Scripts
 PRODUCT_COPY_FILES += \
 	device/htc/leo/scripts/init.d/01modules:system/etc/init.d/01modules \
@@ -106,9 +101,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_LOCALES += hdpi mdpi
 
 # QSD8K Commomn Stuff
-
-# English locale
-# PRODUCT_LOCALES := en
 
 # High Density art
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -243,4 +235,4 @@ $(call inherit-product, device/htc/leo/proprietary.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_leo
 PRODUCT_DEVICE := leo
-PRODUCT_MODEL := Full Android on leo
+PRODUCT_MODEL := HD2
