@@ -1,6 +1,3 @@
-ifeq ($(BOARD_VENDOR),htc)
-ifeq ($(TARGET_BOARD_PLATFORM),qsd8k)
-
 $(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libcamera_intermediates/)
 $(shell touch $(OUT)/obj/SHARED_LIBRARIES/libcamera_intermediates/export_includes)
 
@@ -32,6 +29,3 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_PRELINK_MODULE   := false
 
 include $(BUILD_SHARED_LIBRARY)
-
-endif
-endif
