@@ -20,6 +20,8 @@ subdir_makefiles := \
     $(LOCAL_PATH)/custom_libraries/liblights/Android.mk \
     $(LOCAL_PATH)/custom_libraries/libreference-ril/Android.mk \
     $(LOCAL_PATH)/custom_libraries/libsensors/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/gpsshim/Android.mk \
+    $(LOCAL_PATH)/custom_libraries/libgps/Android.mk \
     $(LOCAL_PATH)/custom_libraries/power/Android.mk
 
 
