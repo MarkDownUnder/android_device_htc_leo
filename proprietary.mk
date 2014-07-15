@@ -26,11 +26,15 @@ PRODUCT_COPY_FILES += \
     device/htc/leo/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     device/htc/leo/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     device/htc/leo/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    device/htc/leo/proprietary/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+    device/htc/leo/proprietary/lib/egl/libplayback_adreno200.so:system/lib/egl/libplayback_adreno200.so \
     device/htc/leo/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     device/htc/leo/proprietary/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
     device/htc/leo/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
     device/htc/leo/proprietary/lib/libgsl.so:system/lib/libgsl.so \
+    device/htc/leo/proprietary/lib/libllvm-arm.so:system/lib/libllvm-arm.so \
     device/htc/leo/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    device/htc/leo/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
     device/htc/leo/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so 
 
 # Audio
