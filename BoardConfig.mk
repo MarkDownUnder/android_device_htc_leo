@@ -52,14 +52,13 @@ BOARD_VENDOR := htc
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := cortex-a8
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a8
 ARCH_ARM_HAVE_NEON := true
 ARCH_ARM_HAVE_VFP := true
 
 # Wifi
-WIFI_BAND                        := 802_11_ABG
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
@@ -127,6 +126,7 @@ USE_SET_METADATA := false
 BOARD_USES_LEGACY_RIL := true
 
 # Kernel
+TARGET_NO_KERNEL := false
 TARGET_KERNEL_SOURCE := kernel/htc/leo
 TARGET_KERNEL_CONFIG := htcleo_defconfig
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 wire.search_count=5
