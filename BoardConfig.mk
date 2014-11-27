@@ -126,9 +126,9 @@ USE_SET_METADATA := false
 BOARD_USES_LEGACY_RIL := true
 
 # Kernel
-TARGET_NO_KERNEL := false
 TARGET_KERNEL_SOURCE := kernel/htc/leo
 TARGET_KERNEL_CONFIG := htcleo_defconfig
+TARGET_PREBUILT_KERNEL := $(DEVICE_FOLDER)/kernel
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 wire.search_count=5
 BOARD_KERNEL_BASE := 0x11800000
 BOARD_KERNEL_NEW_PPPOX := true
