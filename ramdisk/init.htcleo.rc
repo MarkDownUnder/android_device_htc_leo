@@ -8,19 +8,9 @@ on init
     symlink /storage/sdcard0 /mnt/sdcard
 
 on fs
+    write /sys/devices/virtual/bdi/179:0/read_ahead_kb 2048
     # Mount all partitions
-    # mount_all ./fstab.htcleo
-
-    # mount mtd partitions
-	# Mount /system rw first to give the filesystem a chance to save a checkpoint
-    mount yaffs2 mtd@system /system noatime nodiratime
-    #mount yaffs2 mtd@system /system ro remount
-
-    # move cache to data -TYT
-    mount yaffs2 mtd@userdata /data nosuid nodev noatime nodiratime
-    mount yaffs2 mtd@cache /mnt/cache nosuid nodev
-
-
+    mount_all ./fstab.htcleo
 
 on post-fs-data
     mkdir /data/misc/wifi 0770 wifi wifi
