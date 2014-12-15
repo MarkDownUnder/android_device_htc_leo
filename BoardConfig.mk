@@ -61,7 +61,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/htc/leo/bluetooth/include
 # Qcom
 TARGET_QCOM_DISPLAY_VARIANT := legacy
 TARGET_QCOM_MEDIA_VARIANT := legacy
-TARGET_QCOM_AUDIO_VARIANT := legacy
+TARGET_QCOM_AUDIO_VARIANT := caf
 
 # Display
 BOARD_EGL_CFG := device/htc/leo/configs/egl.cfg
@@ -106,6 +106,7 @@ BOARD_LEGACY_NL80211_STA_EVENTS := true
 
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
+BOARD_USES_LEGACY_ALSA_AUDIO := true
 TARGET_PROVIDES_AUDIO_EFFECTS := true
 
 # Compass/Accelerometer
