@@ -139,27 +139,3 @@ TARGET_ARCH_LOWMEM := true
 # Recovery
 TARGET_RECOVERY_FSTAB = device/htc/leo/ramdisk/fstab.htcleo
 RECOVERY_FSTAB_VERSION := 2
-
-#TWRP start
-DEVICE_RESOLUTION := 480x800
-LANDSCAPE_RESOLUTION := 800x480
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
-# libtar's debug levels: "verbose" - "info" - (if ommited all msgs will be suppressed)
-TW_TAR_DEBUG_LEVEL := "verbose"
-TW_CUSTOM_POWER_BUTTON := 107
-TW_FORCE_CPUINFO_FOR_DEVICE_ID := true
-TW_EXCLUDE_ENCRYPTED_BACKUPS := true
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_JB_CRYPTO := true
-TW_INCLUDE_NTFS_3G := false
-TW_INCLUDE_MKNTFS := false
-TW_INCLUDE_EXFAT := true
-TW_INCLUDE_F2FS := false
-TW_INCLUDE_NILFS2 := false
-TW_NO_SCREEN_BLANK := true
-TW_MAX_BRIGHTNESS := 255
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TARGET_RECOVERY_INITRC := device/htc/leo/ramdisk/init.rc
-TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/leo/kernel
-#TWRP end
