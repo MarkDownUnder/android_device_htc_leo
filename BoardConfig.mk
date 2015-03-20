@@ -109,9 +109,6 @@ BOARD_GPS_LIBRARIES := libgps
 # Legacy
 BOARD_USE_LEGACY_TRACKPAD := true
 
-# SELinux
-include device/qcom/sepolicy/sepolicy.mk
-
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),userdebug)
