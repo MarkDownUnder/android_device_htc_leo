@@ -111,9 +111,6 @@ enum {
      * cannot be used with noncontiguous heaps */
     GRALLOC_USAGE_PRIVATE_UNCACHED        =       0x00100000,
 
-    /* Buffer content should be displayed on an primary display only */
-    GRALLOC_USAGE_PRIVATE_INTERNAL_ONLY   =       0x04000000,
-
     /* This flag needs to be set when using a non-contiguous heap from ION.
      * If not set, the system heap is assumed to be coming from ashmem
      */
@@ -148,9 +145,6 @@ enum {
 
     /* Close Caption displayed on an external display only */
     GRALLOC_USAGE_PRIVATE_EXTERNAL_CC     =       0x000F0000,
-
-    /* This flag is used for SECURE display usecase */
-    GRALLOC_USAGE_PRIVATE_SECURE_DISPLAY  =       0x00800000,
 #endif
 };
 
@@ -245,7 +239,6 @@ struct private_handle_t : public native_handle {
             PRIV_FLAGS_EXTERNAL_BLOCK     = 0x00004000,
             // Display this buffer on external as close caption
             PRIV_FLAGS_EXTERNAL_CC        = 0x00008000,
-            PRIV_FLAGS_SECURE_DISPLAY     = 0x01000000,
         };
 
         // file-descriptors
